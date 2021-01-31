@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7
+FROM redhat-sso-7/sso70-openshift
 
 
 ENV container oci
