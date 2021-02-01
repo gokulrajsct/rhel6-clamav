@@ -19,8 +19,8 @@ LABEL io.openshift.tags="base rhel7"
 
 
 
-RUN    rpm --import http://download.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-7 \
-    && yum -y install epel-release \
+RUN   yum -y install epel-release \
+    && sudo yum repolist
     && yum -y install clamav-update clamd \
     && yum clean all
 
